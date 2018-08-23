@@ -14,7 +14,7 @@ public class CubeEditor : MonoBehaviour
 
     void Update ()
     {
-        UpdateTextOnCube();
+        UpdatenNameAndTextOnCube();
 
         SnapCubePosition();
     }
@@ -27,9 +27,11 @@ public class CubeEditor : MonoBehaviour
         transform.position = new Vector3(snapPos.x, 0f, snapPos.z);
     }
 
-    private void UpdateTextOnCube()
+    private void UpdatenNameAndTextOnCube()
     {
         textMesh = GetComponentInChildren<TextMesh>();
-        textMesh.text = snapPos.x / gridSize + "," + snapPos.z / gridSize;
+        string labelName = snapPos.x / gridSize + "," + snapPos.z / gridSize;
+        textMesh.text = labelName;
+        gameObject.name = labelName;
     }
 }
