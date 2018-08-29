@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
-
+    // I am really exited to learn Pathfinding!
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
     [SerializeField] Waypoint startWaypoint, endWaypoint;
     Vector2Int[] directions = { Vector2Int.up, Vector2Int.right, Vector2Int.down, Vector2Int.left };
