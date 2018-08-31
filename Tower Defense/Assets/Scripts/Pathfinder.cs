@@ -15,9 +15,8 @@ public class Pathfinder : MonoBehaviour
     void Start ()
     {
         LoadBlocks();
-        ColorStartAndEnd();
         FindingPath();
-        //ExploreNeighbors();
+        ColorStartAndEnd();
     }
 
     private void FindingPath()
@@ -26,7 +25,6 @@ public class Pathfinder : MonoBehaviour
         while (queue.Count > 0 && isRunning)
         {
             var searchCenter = queue.Dequeue();
-            print("Searching from: " + searchCenter); //ToDo remove log
             SearchingFromEndPoint(searchCenter);
             ExploreNeighbors(searchCenter);
         }
@@ -50,18 +48,28 @@ public class Pathfinder : MonoBehaviour
             Vector2Int exploredNeighbor = from.GetGridPos() + direction;
             try
             {
-                Waypoint neighbor = grid[exploredNeighbor];
-                if (neighbor != endWaypoint)
-                {
-                    neighbor.SetTopColor(Color.blue);
-                }
-                queue.Enqueue(neighbor);
-                print("Queueing " + neighbor);
+                QueueNewNeighbors(exploredNeighbor);
             }
             catch
             {
                 continue;
             }
+        }
+    }
+
+    private void QueueNewNeighbors(Vector2Int exploredNeighbor)
+    {
+        Waypoint neighbor = grid[exploredNeighbor];
+        if (neighbor.isExplored)
+        {
+
+        }
+        else
+        {
+            neighbor.isExplored = true;
+            neighbor.SetTopColor(Color.blue);
+            queue.Enqueue(neighbor);
+            print("Queueing " + neighbor);
         }
     }
 

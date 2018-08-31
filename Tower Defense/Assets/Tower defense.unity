@@ -296,6 +296,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4145394167868490, guid: 6d54f77e28363a843b4c08a56d8b03a6,
     type: 2}
   m_PrefabInternal: {fileID: 192275777}
+--- !u!114 &253571529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114642098343172460, guid: 6d54f77e28363a843b4c08a56d8b03a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 2022438972}
+  m_Script: {fileID: 11500000, guid: ae7b652c9ed730b498604513767d3a07, type: 3}
 --- !u!1001 &270780004
 Prefab:
   m_ObjectHideFlags: 0
@@ -494,8 +500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91529544b7880846adcc13253271fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startWaypoint: {fileID: 1671703503}
-  endWaypoint: {fileID: 1816278254}
+  startWaypoint: {fileID: 253571529}
+  endWaypoint: {fileID: 1374532543}
 --- !u!1001 &349171985
 Prefab:
   m_ObjectHideFlags: 0
@@ -1974,6 +1980,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4145394167868490, guid: 6d54f77e28363a843b4c08a56d8b03a6,
     type: 2}
   m_PrefabInternal: {fileID: 1370150757}
+--- !u!114 &1374532543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114642098343172460, guid: 6d54f77e28363a843b4c08a56d8b03a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1418148047}
+  m_Script: {fileID: 11500000, guid: ae7b652c9ed730b498604513767d3a07, type: 3}
 --- !u!1001 &1379763578
 Prefab:
   m_ObjectHideFlags: 0
@@ -2340,18 +2352,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4145394167868490, guid: 6d54f77e28363a843b4c08a56d8b03a6,
     type: 2}
   m_PrefabInternal: {fileID: 1585198285}
---- !u!114 &1671703503 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114642098343172460, guid: 6d54f77e28363a843b4c08a56d8b03a6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1168616694}
-  m_Script: {fileID: 11500000, guid: ae7b652c9ed730b498604513767d3a07, type: 3}
---- !u!114 &1816278254 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114642098343172460, guid: 6d54f77e28363a843b4c08a56d8b03a6,
-    type: 2}
-  m_PrefabInternal: {fileID: 349171985}
-  m_Script: {fileID: 11500000, guid: ae7b652c9ed730b498604513767d3a07, type: 3}
 --- !u!1001 &1977784686
 Prefab:
   m_ObjectHideFlags: 0
