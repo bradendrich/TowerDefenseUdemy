@@ -5,6 +5,7 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     [SerializeField] Transform MoveToPan;
+    [SerializeField] Transform MoveToRotate;
 
 
 	void Start ()
