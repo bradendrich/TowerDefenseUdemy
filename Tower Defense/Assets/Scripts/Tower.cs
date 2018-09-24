@@ -9,7 +9,6 @@ public class Tower : MonoBehaviour
 
 	void Update ()
     {
-        transform.LookAt(MoveToPan);
-        transform.LookAt(TargetEnemy);
+        MoveToPan.LookAt(TargetEnemy);
 	}
 }
