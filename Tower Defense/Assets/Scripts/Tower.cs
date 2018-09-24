@@ -5,16 +5,11 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     [SerializeField] Transform MoveToPan;
-    [SerializeField] Transform MoveToRotate;
+    [SerializeField] Transform TargetEnemy;
 
-
-	void Start ()
-    {
-		
-	}
-	
 	void Update ()
     {
-		
+        transform.LookAt(MoveToPan);
+        transform.LookAt(TargetEnemy);
 	}
 }
